@@ -454,6 +454,32 @@ const config: RmNgPdfViewerConfig = {
 </details>
 
 <details>
+<summary><b>How do I use the viewer in an offline / air-gapped environment?</b></summary>
+
+The viewer normally fetches its `pdfium.wasm` engine from a CDN (`cdn.jsdelivr.net`), which is unreachable in offline or air-gapped environments. Since v1.0.0 the `pdfium.wasm` engine is **embedded directly in the library bundle** as a `data:` URL, so the viewer works offline with **no configuration and no extra assets** — even in production builds.
+
+You can still override the engine location if you prefer to self-host it:
+
+```ts
+const config: RmNgPdfViewerConfig = {
+  wasmUrl: '/pdfium.wasm', // absolute URL or relative path; resolved against the app origin
+};
+```
+
+```html
+<rm-ng-pdf-viewer src="doc.pdf" [config]="config" />
+```
+
+</details>
+
+<details>
+<summary><b>Why do I see network errors like ERR_ADDRESS_UNREACHABLE?</b></summary>
+
+The engine runs inside a web worker and fetches the PDF document itself. If your PDF `src` points at a host that is unreachable, the document cannot load — serve it from a reachable location. The embedded `pdfium.wasm` never needs the network. The stamp plugin also fetches its default manifests from a CDN; the library disables that by default (`stamp: { manifests: [] }`) unless you supply your own stamp configuration.
+
+</details>
+
+<details>
 <summary><b>Can I use custom loading skeletons or error templates?</b></summary>
 
 Yes. You can pass `ng-template` references to render bespoke skeleton views and error cards. Define templates in your component view and pass them to the component. See the [Usage Guide](https://github.com/malikrajat/rm-ng-pdf-viewer/blob/master/docs/guides/basic-usage.md) for detailed examples.

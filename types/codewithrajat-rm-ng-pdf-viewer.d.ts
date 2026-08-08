@@ -57,6 +57,13 @@ interface RmNgPdfViewerConfig {
     src?: string;
     theme?: RmNgPdfThemeConfig;
     disabledCategories?: string[];
+    /**
+     * Custom URL for the pdfium.wasm engine used by @embedpdf/snippet.
+     * Useful for self-hosting in offline/air-gapped environments. When omitted,
+     * the viewer uses the pdfium.wasm embedded in the library bundle (a data:
+     * URL), so no extra assets or CDN access are required.
+     */
+    wasmUrl?: string;
     [key: string]: unknown;
 }
 interface RmNgPdfViewerGlobalConfig extends RmNgPdfViewerConfig {
@@ -108,6 +115,7 @@ declare class RmNgPdfViewer {
     constructor();
     private loadNewSrc;
     private resolveSrc;
+    private toAbsoluteUrl;
     private revokeCurrentUrl;
     private setupIntersectionObserver;
     private initViewer;
