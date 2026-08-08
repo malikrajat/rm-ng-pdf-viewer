@@ -1,0 +1,220 @@
+{
+  "name": "@codewithrajat/rm-ng-pdf-viewer",
+  "version": "1.0.0",
+  "description": "A high-performance, lightweight, SSR-safe standalone Angular PDF viewer component built with signals. Features automatic light/dark theme synchronization, fine-grained toolbar control, viewport-based lazy loading, custom loaders, and WCAG-compliant accessibility. Powered by @embedpdf/snippet.",
+  "keywords": [
+    "angular",
+    "pdf",
+    "viewer",
+    "pdf-viewer",
+    "pdf-reader",
+    "pdf-component",
+    "pdf-rendering",
+    "pdf-embed",
+    "pdf-display",
+    "pdf-preview",
+    "pdf-document",
+    "pdf-file",
+    "pdf-files",
+    "pdf.js",
+    "pdfjs",
+    "embedpdf",
+    "embedpdf-snippet",
+    "angular-pdf",
+    "angular-pdf-viewer",
+    "angular-pdf-reader",
+    "angular-pdf-component",
+    "angular-component",
+    "angular-standalone",
+    "standalone-component",
+    "standalone",
+    "signals",
+    "angular-signals",
+    "zoneless",
+    "angular-zoneless",
+    "ssr",
+    "ssr-safe",
+    "server-side-rendering",
+    "universal",
+    "angular-universal",
+    "ngx-pdf",
+    "ngx-pdf-viewer",
+    "ngx",
+    "ng",
+    "ng2",
+    "ng-pdf",
+    "typescript",
+    "typescript-pdf",
+    "pdf-typescript",
+    "document-viewer",
+    "document-rendering",
+    "file-viewer",
+    "file-renderer",
+    "web-pdf",
+    "web-pdf-viewer",
+    "browser-pdf",
+    "pdf-toolbar",
+    "pdf-thumbnail",
+    "pdf-zoom",
+    "pdf-search",
+    "pdf-print",
+    "pdf-download",
+    "pdf-fullscreen",
+    "pdf-lazy-load",
+    "lazy-loading",
+    "virtual-scroll",
+    "dark-mode",
+    "dark-theme",
+    "light-theme",
+    "theme-aware",
+    "themeable",
+    "custom-theme",
+    "theming",
+    "responsive",
+    "accessible",
+    "accessibility",
+    "a11y",
+    "wcag",
+    "aria",
+    "keyboard-navigation",
+    "screen-reader",
+    "high-performance",
+    "lightweight",
+    "fast",
+    "performance",
+    "tree-shakable",
+    "tree-shaking",
+    "side-effects-free",
+    "mit-license",
+    "open-source",
+    "codewithrajat",
+    "rajat-malik",
+    "rm-ng-pdf",
+    "rm-ng-pdf-viewer",
+    "pdf-library",
+    "pdf-sdk",
+    "pdf-engine",
+    "pdf-iframe",
+    "pdf-embed-viewer",
+    "pdf-annotation",
+    "pdf-form",
+    "pdf-forms",
+    "reactive",
+    "reactive-forms",
+    "observable",
+    "rxjs",
+    "pdf-canvas",
+    "canvas-pdf",
+    "pdf-buffer",
+    "uint8array",
+    "blob",
+    "pdf-blob",
+    "pdf-url",
+    "pdf-stream",
+    "progressive-web-app",
+    "pwa",
+    "enterprise",
+    "dashboard",
+    "report-viewer",
+    "invoice-viewer",
+    "document-portal",
+    "content-viewer",
+    "pdf-rotation",
+    "pdf-fit",
+    "pdf-navigation",
+    "pdf-page",
+    "pdf-pages",
+    "pdf-scroll",
+    "pdf-pagination"
+  ],
+  "author": {
+    "name": "Rajat Malik",
+    "email": "mr.rajatmalik@gmail.com",
+    "url": "https://www.rajatmalik.dev/"
+  },
+  "contributors": [
+    {
+      "name": "Rajat Malik",
+      "email": "mr.rajatmalik@gmail.com"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Rajat Malik",
+      "email": "mr.rajatmalik@gmail.com"
+    }
+  ],
+  "homepage": "https://github.com/malikrajat/rm-ng-pdf-viewer#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malikrajat/rm-ng-pdf-viewer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/malikrajat/rm-ng-pdf-viewer/issues",
+    "email": "mr.rajatmalik@gmail.com"
+  },
+  "peerDependencies": {
+    "@angular/common": ">=16.0.0 <=26.0.0",
+    "@angular/core": ">=16.0.0 <=26.0.0",
+    "@embedpdf/snippet": "^2.9.1"
+  },
+  "peerDependenciesMeta": {
+    "@embedpdf/snippet": {
+      "optional": false
+    }
+  },
+  "dependencies": {
+    "tslib": "^2.6.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/malikrajat"
+  },
+  "engines": {
+    "node": ">=20.19.0",
+    "npm": ">=10.0.0"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "arm64"
+  ],
+  "ng-add": {
+    "save": "dependencies"
+  },
+  "ng-update": {
+    "packageGroup": [
+      "rm-ng-pdf-viewer"
+    ]
+  },
+  "directories": {
+    "lib": "./src",
+    "doc": "./docs"
+  },
+  "packageManager": "pnpm@10.11.1",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "private": false,
+  "preferGlobal": false,
+  "readme": "README.md",
+  "module": "fesm2022/codewithrajat-rm-ng-pdf-viewer.mjs",
+  "typings": "types/codewithrajat-rm-ng-pdf-viewer.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./types/codewithrajat-rm-ng-pdf-viewer.d.ts",
+      "default": "./fesm2022/codewithrajat-rm-ng-pdf-viewer.mjs"
+    }
+  }
+}
