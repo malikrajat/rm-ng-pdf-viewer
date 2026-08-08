@@ -112,7 +112,9 @@
 ---
 
 <div id="quick-start"></div>
+
 ## Quick Start
+
 ```bash
 npm install @codewithrajat/rm-ng-pdf-viewer
 ```
